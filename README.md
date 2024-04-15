@@ -26,7 +26,7 @@ XXX\
 Bioindicator, large benthic foraminifera, diatom, prokaryotes, coral reef
 
 # Supplementary files (R code and dataset): How-to-do
-1. Download the dataset folder and the R code\
-2. Open R studio and the R code file\
-3. Run the section or the analysis of the code that is of interest\
-4. Cite us, thank you :-)\
+1. Download the dataset folder and the R code
+2. Open R studio and the R code file
+3. Run the section or the analysis of the code that is of interest
+4. Cite us, thank you :-)
