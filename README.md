@@ -27,10 +27,11 @@ Coral reefs are impacted worldwide by coastal eutrophication, which is often tra
 Turbidity, large benthic foraminifera, diatoms, prokaryotes, coral reef
 
 # R code and dataset: How-to-do
-1. Download the dataset folder and the R code
-2. Open R studio and the R code file
-3. Run the section or the analysis of the code that is of interest
-4. Cite us, thank you :-)
+1. Download the dataset zip folder and the R code
+2. Unzip the dataset folder
+3. Open R studio and the R code file
+4. Run the section or the analysis of the code that is of interest
+5. Cite us, thank you :-)
 
 # Citation
 
