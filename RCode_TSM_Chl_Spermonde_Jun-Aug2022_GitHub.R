@@ -302,13 +302,13 @@ data_adj_chl$chl <- 10^data_adj_chl$chl_log
 
 filtered_tsm <-data_adj_tsm %>% group_by(ID) %>% mutate(reduced_tsm = ifelse(tsm > quantile(tsm, 0.90, na.rm=TRUE), NA, tsm))
 filtered_tsm$reduced_tsm[filtered_tsm$ID == 'Langkai' & filtered_tsm$tsm[filtered_tsm$ID == 'Langkai'] > quantile(filtered_tsm$tsm[filtered_tsm$ID == 'Langkai'], 0.50, na.rm=TRUE)] <- NA
-filtered_tsm$reduced_tsm[filtered_tsm$ID == 'Kapoposang Masdar point' & filtered_tsm$tsm[filtered_tsm$ID == 'Kapoposang Masdar point'] > quantile(filtered_tsm$tsm[filtered_tsm$ID == 'Langkai'], 0.50, na.rm=TRUE)] <- NA
+filtered_tsm$reduced_tsm[filtered_tsm$ID == 'Kapoposang Masdar point' & filtered_tsm$tsm[filtered_tsm$ID == 'Kapoposang Masdar point'] > quantile(filtered_tsm$tsm[filtered_tsm$ID == 'Kapoposang Masdar point'], 0.50, na.rm=TRUE)] <- NA
 filtered_tsm$color <- 'black'
 filtered_tsm$color[is.na(filtered_tsm$reduced_tsm)] <- 'red'
 
 filtered_chl <-data_adj_chl %>% group_by(ID) %>% mutate(reduced_chl = ifelse(chl > quantile(chl, 0.90, na.rm=TRUE), NA, chl))
 filtered_chl$reduced_chl[filtered_chl$ID == 'Langkai' & filtered_chl$chl[filtered_chl$ID == 'Langkai'] > quantile(filtered_chl$chl[filtered_chl$ID == 'Langkai'], 0.50, na.rm=TRUE)] <- NA
-filtered_chl$reduced_chl[filtered_chl$ID == 'Kapoposang Masdar point' & filtered_chl$chl[filtered_chl$ID == 'Kapoposang Masdar point'] > quantile(filtered_chl$chl[filtered_chl$ID == 'Langkai'], 0.50, na.rm=TRUE)] <- NA
+filtered_chl$reduced_chl[filtered_chl$ID == 'Kapoposang Masdar point' & filtered_chl$chl[filtered_chl$ID == 'Kapoposang Masdar point'] > quantile(filtered_chl$chl[filtered_chl$ID == 'Kapoposang Masdar point'], 0.50, na.rm=TRUE)] <- NA
 filtered_chl$color <- 'black'
 filtered_chl$color[is.na(filtered_chl$reduced_chl)] <- 'red'
 
